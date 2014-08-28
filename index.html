@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="es">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Javascript</title>
+
+		<meta name="description" content="Presentaciones HTML5">
+		<meta name="author" content="Goalkeeper112">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/default.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+		<script>
+			if( window.location.search.match( /print-pdf/gi ) ) {
+				var link = document.createElement( 'link' );
+				link.rel = 'stylesheet';
+				link.type = 'text/css';
+				link.href = 'css/print/pdf.css';
+				document.getElementsByTagName( 'head' )[0].appendChild( link );
+			}
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+		<style type="text/css" >
+			h1{
+				font-size: 48px;
+				text-transform: capitalize;
+				text-align: center;
+			}
+			section{
+				color: white;
+			}
+		</style>
+	</head>
+
+	<body>
+
+		<div class="reveal">
+			<div class="slides" >
+				<section>
+					<h1>Conoce Javascript desde Cero</h1>
+				</section>
+				<section>
+					<section>
+						<h1>Un poco de historia</h1>
+							<p>JavaScript (abreviado comúnmente "JS") es un lenguaje de programación interpretado, dialecto del estándar ECMAScript. Se define como orientado a objetos,3 basado en prototipos, imperativo, débilmente tipado y dinámico. JavaScript se diseñó con una sintaxis similar al C, aunque adopta nombres y convenciones del lenguaje de programación Java. Sin embargo Java y JavaScript no están relacionados y tienen semánticas y propósitos diferentes.</p>
+					</section>
+					<section>
+						<h1>¿Porqué Javascript es ahora más cool que nunca?</h1>
+					</section>
+					<section>
+						<h1>Conclusión</h1>
+							<p>A pesar de que Javascript desde su creación no fue tomado enserio en los ultimos años se ha convertido en el lenguaje más usado para la web, el surgimiento de tecnologías que trasladaron javascript al lado del servidor como el caso de nodejs...</p>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h1>Variables</h1>
+					</section>
+					<section>
+						<h1>¿Qué es una <br>variable?</h1>
+							<h3>Una variable es un pedazo de código que guarda <br>información</h3>
+					</section>
+					<section>
+						<h1>¿Como se usa una <br>variable en <br>Javascript?</h1>
+							<p>Javascript te pone fácil el trabajo con variables debido a que no debes declarar su tipo más si seguir unas ciertas reglas en cuanto al nombre...<br> <code>var nombre = "luis";</code></p>
+					</section>
+					<section>
+						<h1>Ejemplos de <br>Variables en <br>Javascript</h1>
+							<p><code>var cadena = "Cadena de texto";</code><br>
+								<code>var numero = 112;</code><br>
+								<code>var verdadero = true;</code><br>
+								<code>var falso = false;</code><br>
+								<code>var list = [];</code><br>
+								<code>var jsons = {};</code>
+							</p>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h1>Array</h1>
+					</section>
+					<section>
+						<h1>¿Qué es un array?</h1>
+							<p>Un array, lista o arreglo es un tipo de variable en el cual se pueden guardar varios tipos de datos usando el mismo nombre</p>
+					</section>
+					<section>
+						<h1>Array en javascript</h1>
+							<p>Un array en javascript se declara tal cual como si se tratara de una variable cambiando su contenido por para de corchetes >> [] en el cual situaremos nuestro array</p>
+					</section>
+					<section>
+						<h1>Ejemplos de array en Javascript</h1>
+							<p>
+								<code>var trabajadores = [];</code><br>
+								<code>	  trabajadores[0] = "Luis";</code><br>
+								<code>	  trabajadores[1] = "Fernando";</code><br>
+								<code>document.write(trabajadores[0]," ",trabajadores[1]);</code>
+							</p>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h1>Estructuras <br> condicionales</h1>
+					</section>
+					<section>
+						<h1>La sentencia IF &amp ELSE</h1>
+							<p>Está sentencia es la mayormente usada para aplicar lógica a nuestros script, un estructura if &amp else se puede definir así -> "Si mi salario es mayor que mis gastos entonces soy rico sino voy a quedar en bancarrota"</p>
+					</section>
+					<section>
+						<h1>Ejemplo de esta <br>sentencia</h1>
+							<p>
+								<code>var salario = prompt("¿Cuanto ganas al mes?");</code><br>
+								<code>var gastos = prompt("¿Cuanto gastas al mes?");</code>
+								<code>if(salario > gastos){</code><br>
+								<code>	alert("Eres rico, echate un descanso");</code><br>
+								<code>} else {</code><br>
+								<code>	alert("Anda a donde un contador, te puedes ir a la bancarrota");</code>
+							</p>
+					</section>
+					<section>
+						<h1>La sentencia switch</h1>
+							<p>La sentencia switch es usada comunmente cuando para una variable tenemos distintas respuestas, una forma de explicar esta sentencia seria la siguiente -> "La nomina de la empresa consta de jefes, supervisores y operadores, cuando marcan su hora de entrada cada tipo de trabajador recibe un mensaje y serie de instrucciones distintas"</p>
+					</section>
+					<section>
+						<h1>Ejemplo de switch</h1>
+							<p>
+								<code>var empleado = prompt("¿Qué tipo de empleado eres?");</code><br>
+								<code>switch(empleado){</code><br>
+								<code>	case "jefe": </code><br>
+								<code>		alert("Bienvenido Jefe");<br>break;</code><br>
+								<code>	case "supervisor": </code><br>
+								<code>		alert("Encantado de verlo Super");<br> break;</code><br>
+								<code>	case "operador": </code><br>
+								<code>		alert("A darle con todo campeón");<br> break;</code><br>
+								<code>	default:<br> alert("No eres empleado");<br>break;</code>
+							</p>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h1>Búcles</h1>
+					</section>
+					<section>
+						<h1>¿Qué son Los búcles?</h1>
+							<p>Un búcle en la programación es una sentencia que repite un pedazo de codigo mientras su condicional sea true, son comunmentes usados para recorre cadenas de texto, repetir un codigo cierta cantidad de veces y mucho más</p>
+					</section>
+					<section>
+						<h1>El búcle for</h1>
+							<p>el bucle for es una estructura de control encargada de determinar el numero de veces que una porción de codigo se ejecutara mientras su condicional se mantenga true, este búcle es implementado en nuestra vida cotidiana, un ejemplo de esto seria "Voy a trotar 10 km, cada vez que doy 1000 pasos, recorrí un 1km, debo repetir 10 veces, si ya pase los 10KM paro a descansar hasta otro día"</p>
+					</section>
+					<section>
+						<h1>Ejemplo del búcle FOR</h1>
+						<p>
+							<code>for(var pasos = 0; pasos <= 1000; pasos++){</code><br>
+							<code>	document.write(pasos, "\n");</code><br>
+							<code>};</code>
+						</p>
+					</section>
+					<section>
+						<h1>El búcle while</h1>
+					</section>
+					<section>
+						<h1>¿Qué es el bucle <br>while?</h1>
+							<p>El búcle while es una estructura de control encargada de repetir infinitamente una sentencia hasta que la misma se convierta en false, explicar este búcle es sencillo --> "Pensemos en la regadera(ducha) de nuestro baño, si la abrimos el agua caera continuamente pase lo que pase y solo dejara de correr el agua si se cierra"</p>
+					</section>
+					<section>
+						<h1>ejemplo del búcle de while</h1>
+						<p>
+							<code>var ducha = 0;</code><br>
+							<code>while(ducha < 1000){</code><br>
+							<code>	document.write("agua\n");</code><br>
+							<code>	ducha++;</code><br>
+							<code>};</code>
+						</p>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h1>Funciones</h1>
+					</section>
+					<section>
+						<h1>¿Qué es una función?</h1>
+							<p>Podemos definir a una función como una gran variable encargada de guardar una porción de código que sera usada cierta cantidad de veces, explicar una función quedaria así --> "Una funcion en nuestra vida son las operaciones matematicas, la suma o la resta por ejemplo, ellas poseen un nombre, reciben parametros y ejecutan una serie de pasos"</p>
+					</section>
+					<section>
+						<h1>Ejemplo de una <br>función</h1>
+							<p>
+								<code>function sumar(a, b){<br>
+									var resultado = a + b;<br>
+									document.write(resultado);<br>
+									};<br>
+									sumar(2, 2);
+								</code>
+							</p>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h1>Creamos un <br>proyecto sencillo con javascript</h1>
+					</section>
+				</section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme || 'blood', // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'linear', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Parallax scrolling
+				 parallaxBackgroundImage: 'http://i2.wp.com/bitelia.com/files/2014/04/javascript.jpeg?fit=800%2C600',
+				 parallaxBackgroundSize: '4100px 1200px',
+				
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf8">
+	<title>Prueba</title>
+</head>
+<body>
+	<script type="text/javascript">
+		function sumar(a, b){
+			a = prompt("Primer dígito:");
+			b = prompt("Segundo dígito");
+			var resultado = parseInt(a) + parseInt(b);
+			alert(resultado);
+		};
+
+		function restar(a, b){
+			a = prompt("Primer dígito:");
+			b = prompt("Segundo dígito");
+			var resultado = parseInt(a) - parseInt(b);
+			alert(resultado);
+		};
+
+		function multiplicar(a, b){
+			a = prompt("Primer dígito:");
+			b = prompt("Segundo dígito");
+			var resultado = parseInt(a) * parseInt(b);
+			alert(resultado);
+		};
+
+		function dividir(a, b){
+			a = prompt("Primer dígito:");
+			b = prompt("Segundo dígito");
+			var resultado = parseInt(a) / parseInt(b);
+			alert(resultado);
+		};
+
+		setInterval(function(){
+			var operacion = prompt("¿Qué quieres hacer?");
+
+			switch(operacion){
+				case "sumar": 
+					sumar();
+					break;
+				case "restar":
+					restar();
+					break;
+				case "multiplicar":
+					multiplicar();
+					break;
+				case "dividir":
+					dividir();
+					break;
+				default:
+					alert("Consiguete algo mejor que yo");
+			}
+		}, 5000);
+	</script>
+</body>
+</html>
